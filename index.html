@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史中的三重光</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="ui-overlay">
+        <div id="title-screen" class="screen">
+            <h1 class="game-title">历史中的三重光</h1>
+            <p class="game-subtitle">Triple Light in History</p>
+            <button class="btn" id="btn-start">开始游戏</button>
+        </div>
+        <div id="level-select-screen" class="screen hidden">
+            <h2>选择关卡</h2>
+            <div id="level-list"></div>
+            <button class="btn" id="btn-back-title">返回</button>
+        </div>
+        <div id="pause-screen" class="screen hidden">
+            <h2>暂停</h2>
+            <button class="btn" id="btn-resume">继续</button>
+            <button class="btn" id="btn-quit">退出</button>
+        </div>
+        <div id="results-screen" class="screen hidden">
+            <h2 id="results-title">关卡完成</h2>
+            <div id="results-content"></div>
+            <button class="btn" id="btn-results-back">返回</button>
+        </div>
+    </div>
+
+    <script src="js/level-data.js"></script>
+    <script src="js/beat-system.js"></script>
+    <script src="js/input-system.js"></script>
+    <script src="js/light-balance.js"></script>
+    <script src="js/event-cards.js"></script>
+    <script src="js/bias-system.js"></script>
+    <script src="js/scoring.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/rhythm-engine.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

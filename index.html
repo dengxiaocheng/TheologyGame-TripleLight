@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#0a0a1a">
     <title>历史中的三重光</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <canvas id="gameCanvas"></canvas>
+
+    <!-- Touch target overlays for testing and accessibility -->
+    <div id="touch-lanes">
+        <div class="lane-btn touch-area" data-lane="0"></div>
+        <div class="lane-btn touch-area" data-lane="1"></div>
+        <div class="lane-btn touch-area" data-lane="2"></div>
+    </div>
+    <div class="pause-btn" data-action="pause" id="pause"></div>
+
     <div id="ui-overlay">
         <div id="title-screen" class="screen">
             <h1 class="game-title">历史中的三重光</h1>

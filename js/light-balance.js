@@ -249,7 +249,7 @@ var LightBalance = (function () {
     }
 
     function getCommunionScore() {
-        return Math.max(0, 100 - getImbalance() * 0.5);
+        return Math.max(0, 100 - getImbalance() * 0.25);
     }
 
     // --- Phase 3B: Min/max API ---

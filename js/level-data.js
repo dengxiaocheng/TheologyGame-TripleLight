@@ -15,7 +15,7 @@ var LevelData = (function () {
             duration: 60,
             beatDensity: 0.4,
             unlockCondition: null,
-            laneWeights: [0.7, 0.2, 0.1],
+            laneWeights: [0.45, 0.3, 0.25],
             color: '#4FC3F7',
             difficultyRating: 1,
             tips: '注意节奏的起始——创造的韵律从缓慢开始。保持三轨道的平衡，避免只击打蓝色轨道。',
@@ -192,7 +192,11 @@ var LevelData = (function () {
                 { character: '奥古斯丁', phase: 1, dialogue: '「要有光」——这不是命令，而是上帝自由的爱的表达。创造是恩典。', triggerCondition: 'first_perfect' },
                 { character: '亚西西的方济各', phase: 2, dialogue: '看看天空中的飞鸟、田野中的百合——它们不忧虑，却比所罗门更荣耀。', triggerCondition: 'combo_milestone' },
                 { character: '教宗方济各', phase: 3, dialogue: '安息不是懒惰，而是对受造界恩典本质的承认。停下来，看见。', triggerCondition: 'phase_enter' },
-                { character: '亚西西的方济各', phase: 2, dialogue: 'Brother Sun, Sister Moon——受造之物都是我们的家人。', triggerCondition: 'balance_milestone' }
+                { character: '亚西西的方济各', phase: 2, dialogue: 'Brother Sun, Sister Moon——受造之物都是我们的家人。', triggerCondition: 'balance_milestone' },
+                { character: '亚西西的方济各', phase: 2, dialogue: 'Brother Sun, Sister Moon——受造之物都是我们的家人。', triggerCondition: 'balance_milestone' },
+                { character: '奥古斯丁', phase: 1, dialogue: '时间的起点在上帝的永恒中——创造之前没有时间，因为没有变化。', triggerCondition: 'first_great' },
+                { character: '教宗方济各', phase: 2, dialogue: '每一条河流都是上帝的血脉，每一座山都是祂的祭坛——我们怎能践踏？', triggerCondition: 'bias_warning' },
+                { character: '亚西西的方济各', phase: 3, dialogue: '在安息中，万物回归赞美的本位——不是沉默，而是最深的颂赞。', triggerCondition: 'level_complete' }
             ],
             liturgicalCalendar: {
                 season: 'Ordinary Time / 常年期',
@@ -231,7 +235,7 @@ var LevelData = (function () {
             duration: 60,
             beatDensity: 0.5,
             unlockCondition: 1,
-            laneWeights: [0.15, 0.7, 0.15],
+            laneWeights: [0.25, 0.45, 0.3],
             color: '#FFD54F',
             difficultyRating: 2,
             tips: '道成肉身要求你关注具体的人——金色轨道是关键。试着在节奏变化中保持其他轨道的参与。',
@@ -407,7 +411,11 @@ var LevelData = (function () {
                 { character: '亚他那修', phase: 0, dialogue: '他成为我们所是的，为使我们成为他所是的——道成肉身的逆转。', triggerCondition: 'first_great' },
                 { character: '特蕾莎修女', phase: 2, dialogue: '我在每一个穷人身上看见了基督的面容——他们在呼唤你的回应。', triggerCondition: 'balance_shift' },
                 { character: '古铁雷斯', phase: 2, dialogue: '上帝在历史中特别站在穷人一边——这不是偏袒，而是公义。', triggerCondition: 'bias_warning' },
-                { character: '耶稣基督', phase: 3, dialogue: '复活不是回到从前——是新创造的开始。看哪，我将一切都更新了。', triggerCondition: 'phase_enter' }
+                { character: '耶稣基督', phase: 3, dialogue: '复活不是回到从前——是新创造的开始。看哪，我将一切都更新了。', triggerCondition: 'phase_enter' },
+                { character: '耶稣基督', phase: 3, dialogue: '复活不是回到从前——是新创造的开始。看哪，我将一切都更新了。', triggerCondition: 'phase_enter' },
+                { character: '特蕾莎修女', phase: 1, dialogue: '穷人不只需要面包——他们更需要被看见、被承认、被爱。', triggerCondition: 'combo_milestone' },
+                { character: '亚他那修', phase: 2, dialogue: '上帝成为人，不是降低了自己，而是抬高了人性——肉身成为圣灵的殿。', triggerCondition: 'balance_milestone' },
+                { character: '古铁雷斯', phase: 3, dialogue: '十字架上的基督与所有受苦的人同在——复活是所有受苦之人的盼望。', triggerCondition: 'level_complete' }
             ],
             liturgicalCalendar: {
                 season: 'Christmas / Lent / Easter / 圣诞·大斋·复活',
@@ -447,7 +455,7 @@ var LevelData = (function () {
             duration: 60,
             beatDensity: 0.6,
             unlockCondition: 2,
-            laneWeights: [0.15, 0.15, 0.7],
+            laneWeights: [0.25, 0.3, 0.45],
             color: '#CE93D8',
             difficultyRating: 3,
             tips: '圣灵在出人意料的地方运行——节奏会变得不规则。紫色轨道虽然密集，但不要忽视蓝与金的平衡。',
@@ -627,7 +635,11 @@ var LevelData = (function () {
                 { character: '保罗', phase: 1, dialogue: '恩赐原有分别，圣灵却是一位。事奉原有分别，主却是一位。', triggerCondition: 'first_perfect' },
                 { character: '亚西西的方济各', phase: 2, dialogue: '主啊，使我做你和平的工具——在仇恨的地方播下爱。', triggerCondition: 'bias_critical' },
                 { character: '卫斯理兄弟', phase: 1, dialogue: '我心感到一种奇异而温暖的改变——圣灵的更新从内心开始。', triggerCondition: 'combo_milestone' },
-                { character: '彼得', phase: 3, dialogue: '在群体中，我们一同聆听——圣灵的引导从不孤立。', triggerCondition: 'balance_milestone' }
+                { character: '彼得', phase: 3, dialogue: '在群体中，我们一同聆听——圣灵的引导从不孤立。', triggerCondition: 'balance_milestone' },
+                { character: '彼得', phase: 3, dialogue: '在群体中，我们一同聆听——圣灵的引导从不孤立。', triggerCondition: 'balance_milestone' },
+                { character: '保罗', phase: 0, dialogue: '圣灵亲自用说不出来的叹息替我们祷告——在无词之处，圣灵在代求。', triggerCondition: 'phase_enter' },
+                { character: '卫斯理兄弟', phase: 2, dialogue: '圣灵的果子是爱、喜乐、和平——这些不是感觉，而是生命的印记。', triggerCondition: 'bias_critical' },
+                { character: '亚西西的方济各', phase: 3, dialogue: '圣灵引导我们进入一切真理——但真理总是通往爱的道路。', triggerCondition: 'level_complete' }
             ],
             liturgicalCalendar: {
                 season: 'Pentecost / 五旬节期',
@@ -865,7 +877,11 @@ var LevelData = (function () {
                 { character: '马丁·路德', phase: 3, dialogue: '在这里我站着——我不能做别的。上帝的话语比任何权力都坚固。', triggerCondition: 'bias_warning' },
                 { character: '潘霍华', phase: 1, dialogue: '当基督呼召一个人，他是呼召他来死——昂贵的恩典要求全部的生命。', triggerCondition: 'miss_streak' },
                 { character: '教宗若望二十三世', phase: 4, dialogue: '打开窗户让新鲜空气进来——教会的更新不是背叛传统，而是忠于传统。', triggerCondition: 'phase_enter' },
-                { character: '特蕾莎修女', phase: 2, dialogue: '我们做的不是伟大的事，而是以伟大的爱做小事——这是教会的使命。', triggerCondition: 'balance_milestone' }
+                { character: '特蕾莎修女', phase: 2, dialogue: '我们做的不是伟大的事，而是以伟大的爱做小事——这是教会的使命。', triggerCondition: 'balance_milestone' },
+                { character: '特蕾莎修女', phase: 2, dialogue: '我们做的不是伟大的事，而是以伟大的爱做小事——这是教会的使命。', triggerCondition: 'balance_milestone' },
+                { character: '马丁·路德', phase: 1, dialogue: '这是我的立场——我只能在上帝的话语面前谦卑，不能在人的传统面前妥协。', triggerCondition: 'first_perfect' },
+                { character: '潘霍华', phase: 3, dialogue: '教会只有在为他人存在时才是教会——这是她的本质，不是她的选项。', triggerCondition: 'combo_milestone' },
+                { character: '教宗若望二十三世', phase: 2, dialogue: '教会的窗户必须打开——不是让世界的尘埃进来，而是让圣灵的风吹过。', triggerCondition: 'level_complete' }
             ],
             liturgicalCalendar: {
                 season: 'Full Liturgical Year / 完整礼仪年',
@@ -1121,7 +1137,11 @@ var LevelData = (function () {
                 { character: '罗哲兄弟', phase: 2, dialogue: '在内心保持和平的源泉——然后在他人心中找到和平。', triggerCondition: 'combo_milestone' },
                 { character: '图图大主教', phase: 4, dialogue: '我的使命是和平。我们被造是为了彼此相连——终末的共融已然开始。', triggerCondition: 'phase_enter' },
                 { character: '教宗若望保禄二世', phase: 1, dialogue: '信仰与理性像两只翅膀——在差异的碰撞中寻求真理的面容。', triggerCondition: 'balance_shift' },
-                { character: '教宗方济各', phase: 4, dialogue: '上帝是一切中的一切——一切的终末指向共融。', triggerCondition: 'level_complete' }
+                { character: '教宗方济各', phase: 4, dialogue: '上帝是一切中的一切——一切的终末指向共融。', triggerCondition: 'level_complete' },
+                { character: '教宗方济各', phase: 4, dialogue: '上帝是一切中的一切——一切的终末指向共融。', triggerCondition: 'level_complete' },
+                { character: '图图大主教', phase: 2, dialogue: 'Ubuntu——我存在因为我们存在。共融不是选择，而是存在的本质。', triggerCondition: 'combo_milestone' },
+                { character: '潘霍华', phase: 1, dialogue: '共融不是彼此同意，而是在爱中承担彼此的差异与破碎。', triggerCondition: 'balance_shift' },
+                { character: '罗哲兄弟', phase: 3, dialogue: '在信任中，一切恐惧都消失了——共融的奥秘就是信任的奥秘。', triggerCondition: 'bias_critical' }
             ],
             liturgicalCalendar: {
                 season: 'Eschatological Hope / 终末盼望',
@@ -1202,6 +1222,11 @@ var LevelData = (function () {
     function getPhases(levelId) {
         var level = getLevel(levelId);
         return level ? (level.phases || []) : [];
+    }
+
+    function getPhaseCount(levelId) {
+        var level = getLevel(levelId);
+        return level ? (level.phases ? level.phases.length : 0) : 0;
     }
 
     function getCurrentPhase(levelId, progress) {
@@ -1446,6 +1471,7 @@ var LevelData = (function () {
         // Phase 3C
         getPhases: getPhases,
         getCurrentPhase: getCurrentPhase,
+        getPhaseCount: getPhaseCount,
         getHistoricalContext: getHistoricalContext,
         getBackgroundDescription: getBackgroundDescription,
         getTheologyQuestions: getTheologyQuestions,
